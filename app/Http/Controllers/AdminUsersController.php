@@ -42,7 +42,7 @@ class AdminUsersController extends Controller
     public function store(UsersCreateRequest $request)
     {
 
-
+            return $request->all();
             $input= $request->all();
             $input['password']= bcrypt($request->password);
 

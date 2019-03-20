@@ -2,6 +2,21 @@
 
 @section('content');
 
+{{--Message Alerts--}}
+
+@if(Session::has('user_create_msg'))
+
+  <p class="bg-success">{{session('user_create_msg')}}</p>
+
+@endif
+
+
+@if(Session::has('user_deleted'))
+
+  <p class="bg-danger">{{session('user_deleted')}}</p>
+
+@endif
+
 
 <h1>USERS</h1>
 

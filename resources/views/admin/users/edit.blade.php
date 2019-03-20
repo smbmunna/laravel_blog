@@ -49,6 +49,28 @@
 
 
 
+        {{------------------------------------Delete Form --------------------------}}
+
+        {!! Form::open(['method'=>'delete', 'action'=>['AdminUsersController@destroy',$user->id]]) !!}
+
+        <div class="form-group">
+            {!! Form::submit('Delete Entry',['class'=>'btn btn-danger']) !!}
+        </div>
+        {!! Form::close() !!}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Displaying form errors -->
 

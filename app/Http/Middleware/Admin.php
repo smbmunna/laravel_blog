@@ -19,8 +19,9 @@ class Admin
         if(Auth::check()){
             if(Auth::user()->is_admin()){
                 return $next($request);
+            }else{
+                return redirect('home');
             }
         }
     }
-
 }
